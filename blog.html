@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+
+    <title>About us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estyle.css">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/cf7f988bd9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="Aindex.html"><img src="File.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="Aindex.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+
+                    <li><a href="course.html">PDF</a></li>
+
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                   
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Blogs & online programs for 2021</h1>
+        </div>
+    </section>
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="certificate.jpg" alt="">
+                <h2>Blogs & online programs for 2021</h2>
+                <p>Welcome to Tech-Wiz's Educational Blog! Read here latest Educational articles, latest news
+                    related to exams, sample papers and previous year question paper from last 10 years for a plethora
+                    of examinations including board exam, JEE Mains examination, JEE Advanced exams, </p><br>
+                <p>Tech-Wiz will provide students excellent quality education and facilities for their
+                    overall development. Online education is learning, utilizing electronic technologies to access
+                    educational curriculum outside of a conventional classroom. This can identify the root causes
+                    for problems, and also drive towards more consistent outcomes across different classes,
+                    regardless of the experience of teaching staff</p><br>
+
+                <div class="comment-box">
+                    <h3>
+                        Leave a comment
+                    </h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>23</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>11</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>19</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Commmerce</span>
+                    <span>92</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="sec aboutus">
+                <h4>Tech Wiz</h4>
+                <p>Tech Wiz will provide students excellent quality education and facilities for their
+                    overall development. Online education is learning, utilizing electronic technologies to access
+                    educational curriculum outside of a conventional classroom. This can identify the root causes
+                    for problems, and also drive towards more consistent outcomes across different classes,
+                    regardless of the experience of teaching staff<en</p>
+
+
+                <ul class="sci">
+                    <li> <a href="#"> <i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li> <a href="#"> <i class="fa fa-instagram"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="#">FAQ</a></li>
+                    <li> <a href="#">Privacy Policy</a></li>
+                    <li> <a href="#">Terms & Conditions</a></li>
+                    <li> <a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h4>Contact Info</h4>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Handwara Jammu & Kashmir <br> ,PA 193221 <br>SRINAGAR</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="tel:+917889750770">+917889750770 </a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="mailto:Dk90910@gmail.com">Dk90910@gmail.com</a></p>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+    <div class="copyrightText">
+        <p>Copyright © 2021 Tech-Wiz. All rights reserved| Developed  <i class="fa fa-heart-o"></i> by Ovais Iqbal Shah </p>
+     
+
+    </div>
+
+
+
+    <!----JavaScript for Toggle Menu---->
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

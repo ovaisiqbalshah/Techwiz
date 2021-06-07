@@ -1,0 +1,396 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+
+    <title>EdTEch New</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/cf7f988bd9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="Aindex.html"><img src="File.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="Aindex.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+
+                    <li><a href="course.html">PDF</a></li>
+
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to TechWiz</h1>
+
+
+
+            <button class="hero-btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                LOGIN
+            </button>
+
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">LOGIN</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <button type="submit" class="hero-btn red-btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="hero-btn red-btn" data-bs-toggle="modal"
+                            data-bs-target="#signUpModal">SignUp</button>
+                    </div>
+                    <!-- Button trigger modal -->
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="signUpModalLabel">Registration form</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card bg-light">
+                                        <article class="card-body mx-auto" style="max-width: 400px;">
+                                            <h4 class="card-title mt-3 text-center">Create Account</h4>
+
+                                            <p>
+                                                <a href="" class="btn btn-block btn-google"> <i
+                                                        class="fab fa-google"></i> &nbsp; Login via Gmail</a>
+                                                <a href="" class="btn btn-block btn-facebook"> <i
+                                                        class="fab fa-facebook-f"></i> &nbsp; Login via facebook</a>
+                                            </p>
+                                            <p class="divider-text">
+                                                <span class="bg-light">OR</span>
+                                            </p>
+                                            <form>
+                                                <div class="form-group input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"> <i class="fa fa-user"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input name="" class="form-control" placeholder="Full name"
+                                                        type="text">
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"> <i class="fa fa-envelope"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input name="" class="form-control" placeholder="Email address"
+                                                        type="email">
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"> <i class="fa fa-phone"></i>
+                                                        </span>
+                                                    </div>
+                                                    <select class="custom-select" style="max-width: 120px;">
+                                                        <option selected="">+91</option>
+                                                        <option value="1">+92</option>
+                                                        <option value="2">+198</option>
+                                                        <option value="3">+701</option>
+                                                    </select>
+                                                    <input name="" class="form-control" placeholder="Phone number"
+                                                        type="text">
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"> <i class="fa fa-building"></i>
+                                                        </span>
+                                                    </div>
+                                                    <select class="form-control">
+                                                        <option selected=""> Select User Type</option>
+                                                        <option>Teacher</option>
+                                                        <option>Student</option>
+
+                                                    </select>
+                                                </div> <!-- form-group end.// -->
+                                                <div class="form-group input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"> <i class="fa fa-lock"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Create password"
+                                                        type="password">
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"> <i class="fa fa-lock"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Confirm Password"
+                                                        type="password">
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group">
+                                                    <button type="submit" class="hero-btn red-btn"> Create
+                                                        Account </button>
+                                                </div> <!-- form-group// -->
+                                                <p class="text-center">Have an account? <a href="">Log In</a> </p>
+                                            </form>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course">
+        <h1>COURSES WE OFFER</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>PRE-NURTURE</h3>
+                <p> We've found that the key to helping children become lifelong learners is to let them drive their own
+                    education and pursue learning activities that interest them</p>
+            </div>
+            <div class="course-col">
+                <h3>JEE & NEET</h3>
+                <p>While the traditional learning and coaching system for entrance exams like JEE Mains, NEET make
+                    candidates prepare the right way, online coaching for such entrance exams seems to have positioned
+                    itself in a equal measure scoring on factors like convenience and quality of understanding concepts.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>UG COURSES</h3>
+                <p>The increased use of e-learning among educational institutions has led to a change in higher
+                    education.Recent studies indicate that university students who
+                    have been enrolled on e-learning courses outperform those
+                    being taught on traditional courses</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="campus">
+        <h1>Our Specialities</h1>
+        <p>With M-learning, instructors can incorporate multimedia demonstrations in their lectures and
+            real-time feedback from their students using quizzes or surveys </p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="london.png">
+                <div class="layer">
+                    <h3>MOCK TESTS</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="newyork.png">
+                <div class="layer">
+                    <h3>DOUBT SESSIONS</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="washington.png">
+                <div class="layer">
+                    <h3>PDFs ON TAP</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>TechWiz other initiatives</h1>
+        <p>instructors can incorporate multimedia demonstrations in their lectures and
+            real-time feedback from their students </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="tcs.jpg">
+                <h3>Teach Yourself CS</h3>
+                <p>Get unlimited and free content on Computer Science,Questions & Answers·
+                    Learning Videos·
+                    Mock Tests·
+                    Concept & Definitions·
+                    Interactive stories</p>
+            </div>
+            <div class="facilities-col">
+                <img src="report.jpg">
+                <h3>Tests & Smart Reports
+                </h3>
+                <p>Chapter-wise tests for strengthening concepts
+                    Live Test Series to benchmark your performance
+                    Smart reports to identify your weak areas</p>
+            </div>
+            <div class="facilities-col">
+                <img src="doubtt.jpg">
+                <h3>Doubts Resolutions</h3>
+                <p>
+                    Clear your doubts via chat and stay doubtfree
+                    Ask your question anytime -
+                    Connect with our experts within 10 seconds</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h3>STUDENTS TESTIMONIALS </h3>
+        <p>instructors can incorporate multimedia demonstrations in their lectures and
+            real-time feedback from their student</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="user11.jpg">
+                <div>
+                    <p>In the last three years, the most I have enjoyed about the distance learning is its flexibility
+                        and convenience. I am able to be a full-time employee as well as a full-time student without any
+                        struggles.</p>
+                    <h3>Ovais Iqbal</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="user2.jpg">
+                <div>
+                    <p>I have been able to take advantage of several online classes which has allowed me to be home for
+                        my family and work on my college work when I have time.</p>
+                    <h3>Shah Murtza</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h1>Enroll for various online courses</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="sec aboutus">
+                <h4>Tech Wiz</h4>
+                <p>Tech Wiz will provide students excellent quality education and facilities for their
+                    overall development. Online education is learning, utilizing electronic technologies to access
+                    educational curriculum outside of a conventional classroom. This can identify the root causes
+                    for problems, and also drive towards more consistent outcomes across different classes,
+                    regardless of the experience of teaching staff</p>
+
+
+                <ul class="sci">
+                    <li> <a href="#"> <i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li> <a href="#"> <i class="fa fa-instagram"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="#">FAQ</a></li>
+                    <li> <a href="#">Privacy Policy</a></li>
+                    <li> <a href="#">Terms & Conditions</a></li>
+                    <li> <a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h4>Contact Info</h4>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Handwara Jammu & Kashmir <br> ,PA 193221 <br>SRINAGAR</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="tel:+917889750770">+917889750770 </a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="mailto:Dk90910@gmail.com">Dk90910@gmail.com</a></p>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+    <div class="copyrightText">
+        <p>Copyright © 2021 Tech-Wiz. All rights reserved| Developed <i class="fa fa-heart-o"></i> by Ovais Iqbal Shah
+        </p>
+
+
+    </div>
+
+
+
+    <!----JavaScript for Toggle Menu---->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
